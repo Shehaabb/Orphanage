@@ -1,0 +1,72 @@
+
+<div class="cont">
+    <div class="form sign-in">
+        <label for="usertype">UserType:</label>
+        <select name="Usertype" id="ut" required>
+          <option value="Manager" >Manager</option>
+          <option value="HR">HR</option>
+          <option value="Supervisor">Supervisor</option>
+          <option value="Nurse">Nurse</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Receptionist">Receptionist</option>
+          <option value="Security">Security</option>
+          <option value="Cleaner">Cleaner</option>
+          <option value="Chef">Chef</option>
+        </select> <br>
+      <label>
+        <span>Email</span>
+        <input type="email" placeholder="Email" required />
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" placeholder="Password" required/>
+      </label>
+      <button onclick="PageSelect()" type="button" class="log" >Login</button>
+      <p class="noacc">Don't have an account?</p>
+      <a href="Registration.html">
+          <button type="button" class="fb-btn" >Sign up</button>
+      </a>
+    </div>
+    <script>
+        function PageSelect() {
+            var e = document.getElementById("ut");
+            var value = e.options[e.selectedIndex].value;
+            var text = e.options[e.selectedIndex].text;
+            if(value=="Manager")
+            {
+                window.location='Manager.html'
+            }
+            if(value=="HR")
+            {
+                window.location='HR.html'
+            }
+            if(value=="Supervisor")
+            {
+                window.location='Supervisor.html'
+            }
+            if(value=="Nurse")
+            {
+                window.location='Nurse.html'
+            }
+            if(value=="Doctor")
+            {
+                window.location='Doctor.html'
+            }
+            if(value=="Receptionist")
+            {
+                window.location='Receptionist.html'
+            }
+            if(value=="Security")
+            {
+                window.location='Security.html'
+            }
+            if(value=="Cleaner")
+            {
+                window.location='Cleaner.html'
+            }
+            if(value=="Chef")
+            {
+                window.location='Chef.html'
+            }
+        }
+        </script>
